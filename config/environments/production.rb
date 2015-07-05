@@ -75,4 +75,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # So glyphicons can be displayed correctly in production http://community.onemonth.com/t/glyphicons-not-displaying-in-production/104/16
+  config.assets.precompile += %w( .svg .eot .woff .ttf )
 end
